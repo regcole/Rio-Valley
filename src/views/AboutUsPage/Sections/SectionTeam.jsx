@@ -17,6 +17,8 @@ import teamStyle from "assets/jss/material-kit-pro-react/views/aboutUsSections/t
 import FaceMarc from "assets/img/faces/marc.jpg";
 import FaceChristian from "assets/img/faces/christian.jpg";
 import FaceKendall from "assets/img/faces/kendall.jpg";
+import FaceBabata from "assets/img/faces/babata.jpg";
+import FaceCas from "assets/img/faces/cassie.jpg";
 import FaceAvatar from "assets/img/faces/avatar.jpg";
 
 function SectionTeam(props) {
@@ -33,10 +35,9 @@ function SectionTeam(props) {
             classes.textCenter
           )}
         >
-          <h2 className={classes.title}>We are nerd rockstars</h2>
+          <h2 className={classes.title}>Meet Our Team</h2>
           <h5 className={classes.description}>
-            This is the paragraph where you can write more details about your
-            team. Keep you user engaged by providing meaningful information.
+              We are a small group working to do GREAT things with your help.
           </h5>
         </GridItem>
       </GridContainer>
@@ -45,15 +46,15 @@ function SectionTeam(props) {
           <Card profile plain>
             <CardAvatar profile plain>
               <a href="#pablo">
-                <img src={FaceMarc} alt="profile-pic" className={classes.img} />
+                <img src={FaceCas} alt="profile-pic" className={classes.img} />
               </a>
             </CardAvatar>
             <CardBody plain>
-              <h4 className={classes.cardTitle}>Alec Thompson</h4>
-              <h6 className={classes.textMuted}>CEO / Co-Founder</h6>
+              <h4 className={classes.cardTitle}>Cassandra Stewart</h4>
+              <h6 className={classes.textMuted}>Licensed social worker and mother of 4</h6>
               <p className={classes.cardDescription}>
-                And I love you like Kanye loves Kanye. We need to restart the
-                human foundation.
+                She is passionate about the social welfare of all people including immigrants and refugees and has actively helped her husband, a dallas immigration attorney, advocate for immigrant rights.
+                She believes that all people should be treated with dignity and fairness.
               </p>
             </CardBody>
             <CardFooter className={classes.justifyContent}>
@@ -63,8 +64,8 @@ function SectionTeam(props) {
               <Button href="#pablo" justIcon simple color="facebook">
                 <i className="fab fa-facebook" />
               </Button>
-              <Button href="#pablo" justIcon simple color="google">
-                <i className="fab fa-google" />
+              <Button href="#pablo" justIcon simple color="linkedin">
+                <i className="fab fa-linkedin" />
               </Button>
             </CardFooter>
           </Card>
@@ -74,15 +75,15 @@ function SectionTeam(props) {
             <CardAvatar profile plain>
               <a href="#pablo">
                 <img
-                  src={FaceKendall}
+                  src={FaceAvatar}
                   alt="profile-pic"
                   className={classes.img}
                 />
               </a>
             </CardAvatar>
             <CardBody plain>
-              <h4 className={classes.cardTitle}>Tania Andrew</h4>
-              <h6 className={classes.textMuted}>DESIGNER</h6>
+              <h4 className={classes.cardTitle}>Crystal Stewart</h4>
+              <h6 className={classes.textMuted}>Heart and Soul</h6>
               <p className={classes.cardDescription}>
                 Don't be scared of the truth because we need to restart the
                 human foundation. And I love you like Kanye loves Kanye.
@@ -106,26 +107,28 @@ function SectionTeam(props) {
             <CardAvatar profile plain>
               <a href="#pablo">
                 <img
-                  src={FaceChristian}
+                  src={FaceKendall}
                   alt="profile-pic"
                   className={classes.img}
                 />
               </a>
             </CardAvatar>
             <CardBody plain>
-              <h4 className={classes.cardTitle}>Christian Mike</h4>
-              <h6 className={classes.textMuted}>Web Developer</h6>
+              <h4 className={classes.cardTitle}>Jennifer Gauntt</h4>
+              <h6 className={classes.textMuted}>Spirit Animal</h6>
               <p className={classes.cardDescription}>
-                I love you like Kanye loves Kanye. Don't be scared of the truth
-                because we need to restart the human foundation.
+                has always felt a pull toward relief efforts. Over the course of her life, she has become involved with foundations in the U.S.,
+                South America and India and is eager to provide opportunities for her children to work alongside her.
+                She lives in Austin with her husband and four children and spends an awful lot of time driving, cleaning and asking about homework assignments.
+
               </p>
             </CardBody>
             <CardFooter className={classes.justifyContent}>
               <Button href="#pablo" justIcon simple color="facebook">
                 <i className="fab fa-facebook" />
               </Button>
-              <Button href="#pablo" justIcon simple color="dribbble">
-                <i className="fab fa-dribbble" />
+              <Button href="#pablo" justIcon simple color="linkedin">
+                <i className="fab fa-linkedin" />
               </Button>
             </CardFooter>
           </Card>
@@ -135,24 +138,21 @@ function SectionTeam(props) {
             <CardAvatar profile plain>
               <a href="#pablo">
                 <img
-                  src={FaceAvatar}
+                  src={FaceBabata}
                   alt="profile-pic"
                   className={classes.img}
                 />
               </a>
             </CardAvatar>
             <CardBody plain>
-              <h4 className={classes.cardTitle}>Rebecca Stormvile</h4>
-              <h6 className={classes.textMuted}>WEB DEVELOPER</h6>
+              <h4 className={classes.cardTitle}>Babata Sonnenberg</h4>
+              <h6 className={classes.textMuted}>Super LBJ Alum</h6>
               <p className={classes.cardDescription}>
                 And I love you like Kanye loves Kanye. We really need to restart
                 the human foundation.
               </p>
             </CardBody>
             <CardFooter className={classes.justifyContent}>
-              <Button href="#pablo" justIcon simple color="google">
-                <i className="fab fa-google" />
-              </Button>
               <Button href="#pablo" justIcon simple color="twitter">
                 <i className="fab fa-twitter" />
               </Button>

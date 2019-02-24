@@ -6,7 +6,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
     mode: "development",
     entry: {
-        'lib.min': ['@babel/polyfill', 'react', 'react-dom'],
+        'lib.min': ['react', 'react-dom'],
         'main': ['@babel/polyfill','./src/index.js']
     },
     devtool: 'inline-source-map',

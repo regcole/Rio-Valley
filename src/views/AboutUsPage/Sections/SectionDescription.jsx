@@ -20,11 +20,14 @@ function SectionDescription(props) {
           className={classNames(classes.mrAuto, classes.mlAuto)}
         >
           <h5 className={classes.description}>
-            This is the paragraph where you can write more details about your
-            product. Keep you user engaged by providing meaningful information.
-            Remember that by this time, the user is curious, otherwise he
-            wouldn't scroll to get here. Add a button if you want the user to
-            see more.
+            RVRP was started in response to the growing need for support offered to asylum seekers crossing the border.
+            We seek to help those individuals who are lawfully complying with the requirements for applying for asylum in the U.S.,
+            recognizing that circumstances beyond the control of the asylum seekers lead to lengthy periods of case processing time.
+            We strive to treat their fears and uncertainties with compassion.
+          </h5>
+          <br />
+          <h5 className={classes.description}>
+            We look to cooperate with other foundations and organizations to maximize our efforts
           </h5>
         </GridItem>
       </GridContainer>

@@ -16,61 +16,28 @@ class SectionWork extends React.Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className={classes.section}>
-        <GridContainer justify="center">
-          <GridItem cs={12} sm={8} md={8}>
-            <h2 className={classes.title}>Work with us</h2>
-            <h4 className={classes.description}>
-              Divide details about your product or agency work into parts. Write
-              a few lines about each one and contact us about any further
-              collaboration. We will responde get back to you in a couple of
-              hours.
-            </h4>
-            <form>
-              <GridContainer>
-                <GridItem xs={12} sm={6} md={6}>
-                  <CustomInput
-                    labelText="Your Name"
-                    id="name"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                </GridItem>
-                <GridItem xs={12} sm={6} md={6}>
-                  <CustomInput
-                    labelText="Your Email"
-                    id="email"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                </GridItem>
-                <CustomInput
-                  labelText="Your Message"
-                  id="message"
-                  formControlProps={{
-                    fullWidth: true,
-                    className: classes.textArea
-                  }}
-                  inputProps={{
-                    multiline: true,
-                    rows: 5
-                  }}
-                />
-                <GridItem
-                  xs={12}
-                  sm={4}
-                  md={4}
-                  className={`${classes.mrAuto} ${classes.mlAuto}`}
-                >
-                  <Button color="primary">Send Message</Button>
-                </GridItem>
-              </GridContainer>
-            </form>
-          </GridItem>
-        </GridContainer>
-      </div>
+        <div className={classes.section}>
+          <GridContainer justify="center">
+            <GridItem xs={12} sm={8} md={8}>
+              <h2 className={classes.title}>Who We Do it For</h2>
+              <h5 className={classes.description} >
+                It’s lovely you’re reading up on us, but really, the focus should be on those we are supporting. The political situation in Central American countries like Honduras and El Salvador is such that many find themselves in impossibly violent and intolerable situations.
+                Many have survived torture, murder attempts, kidnappings and rape and fear for the well-being of their children.
+              </h5>
+              <br />
+              <h5 className={classes.description}>
+
+                Our country has a long-standing tradition of welcoming immigrants fleeing from such conditions and have set forth a number of conditions asylums seekers must respect.
+                The people we are serving have legally applied for asylum and have been released by U.S. authorities to wait for their asylum hearings at courts across the country.
+                Once released from detention centers, McAllen being the largest, most of these people have only the clothes on their backs and are in desperate need of hygiene items, clothing, food and a warm welcome to restore dignity and hope.
+              </h5>
+               <br />
+               <h5 className={classes.description}>
+                We are supported by a large and dedicated network of friends and associates who ALWAYS jump on board, who manage to maximize our efforts and for whom we are so grateful.
+              </h5>
+            </GridItem>
+          </GridContainer>
+        </div>
     );
   }
 }

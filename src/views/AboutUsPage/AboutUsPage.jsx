@@ -20,7 +20,7 @@ import SectionTeam from "views/AboutUsPage/Sections/SectionTeam.jsx";
 import SectionServices from "views/AboutUsPage/Sections/SectionServices.jsx";
 import SectionOffice from "views/AboutUsPage/Sections/SectionOffice.jsx";
 import SectionContact from "views/AboutUsPage/Sections/SectionContact.jsx";
-
+import backgroundImage from "assets/img/bg9.jpg";
 import aboutUsStyle from "assets/jss/material-kit-pro-react/views/aboutUsStyle.jsx";
 
 class AboutUsPage extends React.Component {
@@ -33,7 +33,7 @@ class AboutUsPage extends React.Component {
     return (
       <div>
         <Header
-          brand="Material Kit PRO React"
+          brand="Rio Valley Relief Project"
           links={<HeaderLinks dropdownHoverColor="info" />}
           fixed
           color="transparent"
@@ -42,7 +42,7 @@ class AboutUsPage extends React.Component {
             color: "info"
           }}
         />
-        <Parallax image={require("assets/img/bg9.jpg")} filter="dark" small>
+        <Parallax image={backgroundImage} filter="dark" small>
           <div className={classes.container}>
             <GridContainer justify="center">
               <GridItem
@@ -67,58 +67,48 @@ class AboutUsPage extends React.Component {
           <div className={classes.container}>
             <SectionDescription />
             <SectionTeam />
-            <SectionServices />
-            <SectionOffice />
             <SectionContact />
           </div>
         </div>
         <Footer
-          content={
-            <div>
-              <div className={classes.left}>
-                <List className={classes.list}>
-                  <ListItem className={classes.inlineBlock}>
-                    <a
-                      href="https://www.creative-tim.com/"
-                      className={classes.block}
-                    >
-                      Creative Tim
-                    </a>
-                  </ListItem>
-                  <ListItem className={classes.inlineBlock}>
-                    <a
-                      href="https://www.creative-tim.com/presentation"
-                      className={classes.block}
-                    >
-                      About us
-                    </a>
-                  </ListItem>
-                  <ListItem className={classes.inlineBlock}>
-                    <a
-                      href="//blog.creative-tim.com/"
-                      className={classes.block}
-                    >
-                      Blog
-                    </a>
-                  </ListItem>
-                  <ListItem className={classes.inlineBlock}>
-                    <a
-                      href="https://www.creative-tim.com/license"
-                      className={classes.block}
-                    >
-                      Licenses
-                    </a>
-                  </ListItem>
-                </List>
+            content={
+              <div>
+                <div className={classes.left}>
+                  <List className={classes.list}>
+                    <ListItem className={classes.inlineBlock}>
+                      <a
+                          href="/"
+                          className={classes.block}
+                      >
+                        RVRP
+                      </a>
+                    </ListItem>
+                    <ListItem className={classes.inlineBlock}>
+                      <a
+                          href="https://www.creative-tim.com/presentation"
+                          className={classes.block}
+                      >
+                        About us
+                      </a>
+                    </ListItem>
+                    <ListItem className={classes.inlineBlock}>
+                      <a
+                          href="//blog.creative-tim.com/"
+                          className={classes.block}
+                      >
+                        Newsroom
+                      </a>
+                    </ListItem>
+                  </List>
+                </div>
+                <div className={classes.right}>
+                  &copy; {1900 + new Date().getYear()} , made with{" "}
+                  <Favorite className={classes.icon} /> by{" "}
+                  <a href="/">RVRP</a> for a
+                  better web.
+                </div>
               </div>
-              <div className={classes.right}>
-                &copy; {1900 + new Date().getYear()} , made with{" "}
-                <Favorite className={classes.icon} /> by{" "}
-                <a href="https://www.creative-tim.com">Creative Tim</a> for a
-                better web.
-              </div>
-            </div>
-          }
+            }
         />
       </div>
     );
