@@ -36,7 +36,7 @@ class HelpUsPage extends React.Component {
               color="transparent"
               changeColorOnScroll={{
                 height: 400,
-                color: "info"
+                color: "rose"
               }}
           />
           <Parallax
@@ -49,7 +49,7 @@ class HelpUsPage extends React.Component {
                   <div className={classes.brand}>
                     <h1>
                       How Can You Help?
-                      <span className={classes.proBadge}>PRO</span>
+                      <span className={classes.proBadge}>:-)</span>
                     </h1>
                     <h3 className={classes.title}>
                       There are multiple ways for you to get involved.

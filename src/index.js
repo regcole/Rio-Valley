@@ -7,7 +7,7 @@ import "./assets/scss/material-kit-pro-react.scss";
 import ContactUsPage from "./views/ContactUsPage/ContactUsPage.jsx";
 import LandingPage from "./views/LandingPage/LandingPage.jsx";
 import AboutUsPage from "./views/AboutUsPage/AboutUsPage.jsx";
-import HelpUsPage from "views/HelpUsPage/HelpUsPage.jsx";
+import HelpUsPage from "./views/HelpUsPage/HelpUsPage.jsx";
 
 var hist = createBrowserHistory();
 

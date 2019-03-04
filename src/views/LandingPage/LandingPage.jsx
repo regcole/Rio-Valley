@@ -22,6 +22,7 @@ import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPag
 import SectionProduct from "./Sections/SectionProduct.jsx";
 import SectionTeam from "./Sections/SectionTeam.jsx";
 import SectionWork from "./Sections/SectionWork.jsx";
+import SectionContacts from "./Sections/SectionContacts.jsx";
 
 class LandingPage extends React.Component {
   componentDidMount() {
@@ -39,7 +40,7 @@ class LandingPage extends React.Component {
           fixed
           changeColorOnScroll={{
             height: 300,
-            color: "info"
+            color: "rose"
           }}
           {...rest}
         />
@@ -54,16 +55,6 @@ class LandingPage extends React.Component {
 
                 </h4>
                 <br />
-                <Button
-                  color="danger"
-                  size="lg"
-                  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fas fa-play" />
-                  Watch video
-                </Button>
               </GridItem>
             </GridContainer>
           </div>
@@ -71,7 +62,7 @@ class LandingPage extends React.Component {
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
             <SectionProduct />
-            <SectionWork />
+            <SectionContacts />
           </div>
         </div>
         <Footer

@@ -17,6 +17,8 @@ import Menu from "@material-ui/icons/Menu";
 import Close from "@material-ui/icons/Close";
 // core components
 import headerStyle from "assets/jss/material-kit-pro-react/components/headerStyle.jsx";
+import RVRPImg from "assets/img/RVRP_Logo.png";
+import Media from "components/Media/Media.jsx";
 
 class Header extends React.Component {
   constructor(props) {
@@ -70,6 +72,7 @@ class Header extends React.Component {
     return (
       <AppBar className={appBarClasses}>
         <Toolbar className={classes.container}>
+          <Media avatar={RVRPImg} />
           <Link className={classes.title} to="/">{brand}</Link>
           {/*<Button>*/}
             {/**/}

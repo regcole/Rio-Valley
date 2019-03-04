@@ -13,12 +13,11 @@ import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 import Footer from "components/Footer/Footer.jsx";
+
 // sections for this page
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import SectionDescription from "views/AboutUsPage/Sections/SectionDescription.jsx";
 import SectionTeam from "views/AboutUsPage/Sections/SectionTeam.jsx";
-import SectionServices from "views/AboutUsPage/Sections/SectionServices.jsx";
-import SectionOffice from "views/AboutUsPage/Sections/SectionOffice.jsx";
 import SectionContact from "views/AboutUsPage/Sections/SectionContact.jsx";
 import backgroundImage from "assets/img/bg9.jpg";
 import aboutUsStyle from "assets/jss/material-kit-pro-react/views/aboutUsStyle.jsx";
@@ -39,7 +38,7 @@ class AboutUsPage extends React.Component {
           color="transparent"
           changeColorOnScroll={{
             height: 300,
-            color: "info"
+            color: "rose"
           }}
         />
         <Parallax image={backgroundImage} filter="dark" small>
